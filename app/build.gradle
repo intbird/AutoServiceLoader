@@ -40,7 +40,7 @@ dependencies {
     kapt 'com.google.auto.service:auto-service:1.0-rc6'
     implementation 'com.google.auto.service:auto-service-annotations:1.0-rc6'
     debugImplementation project(path: ":service-loader")
-    implementation "androidx.startup:startup-runtime:1.0.0-alpha03"
+    implementation "androidx.startup:startup-runtime:1.0.0-beta01"
 
     debugImplementation project(path: ":services-android")
     debugImplementation project(path: ":services-google")

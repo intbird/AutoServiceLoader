@@ -1,14 +1,43 @@
-ServiceLoader
+AutoService
 ========
 
-This repo is for publish aar lib for  [intbird repo](https://intbird.ml/maven/releases/).
+This repo is a sample of java service loader
 
-how about
+========
+
+# implements
+
+ ```
+  //java service loader and custom path service loader
+  intbird.soft.app.JavaServiceLoader
+
+  // https://github.com/google/auto/tree/master/service
+  'com.google.auto.service:auto-service-annotations:1.0-rc6'
+
+  // https://proandroiddev.com/androidx-app-startup-698855342f80
+  'androidx.startup:startup-runtime:1.0.0-beta01'
+
+ ```
+
+
+
+# Samples
+```
+include ':service-loader' // myself serviceloader
+include ':services-android' // androidx startup demo
+include ':services-google' // auto servcie demo
+include ':services-java' // java service demo
+```
+
+## auto servcie & androidx startup 
 ![intbird](./images/intbird.png)
 
-#### How to use it ? 
+
 
 --------
+# intbird
+
+myselt auto service loader
 #### 1.add maven url in root project `build.gradle` file
 ```
 allprojects {
@@ -16,15 +45,6 @@ allprojects {
         google()
         jcenter()
         maven { url "https://intbird.ml/maven/releases/" }
-    }
-
-    configurations.all {
-        resolutionStrategy {
-            // don't cache dynamic versions at all
-            cacheDynamicVersionsFor 0, 'seconds'
-            // don't cache changing modules at all
-            cacheChangingModulesFor 0, 'seconds'
-        }
     }
 }
 ```
@@ -36,14 +56,4 @@ $lastVersion = 1.0.0 [click here to see more info](CHANGELOG.md)
 dependencies {
     implementation 'intbird.soft.lib:service-loader:1.0.0'
 }
-```
-
-
-#### More about to do with android lib module
-
-see: [https://github.com/intbird/VideoPlayerLib](https://github.com/intbird/VideoPlayerLib)
-
-```
- var path = "$video path"
- ServicesLoader.load(IVideoPlayer::class.java)?.startActivity(this, arrayListOf(path,path,path), defaultStartIndex=0)
 ```
