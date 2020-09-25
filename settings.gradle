@@ -1,0 +1,8 @@
+include ':services-android'
+rootProject.name='ServiceLoader'
+include ':app'
+
+include ':service-loader'
+include ':services-android'
+include ':services-google'
+include ':services-java'
