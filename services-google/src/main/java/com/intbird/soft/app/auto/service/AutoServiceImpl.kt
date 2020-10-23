@@ -1,16 +1,16 @@
-package com.intbird.soft.app.auto.service
+package net.intbird.soft.app.auto.service
 
 import android.content.Context
 import android.widget.Toast
 import com.google.auto.service.AutoService
-import com.intbird.soft.app.auto.service.api.AutoServiceCallback
-import com.intbird.soft.app.auto.service.api.AutoServiceInterface
-import intbird.soft.lib.service.loader.ServicesLoader
+import net.intbird.soft.app.auto.service.api.AutoServiceCallback
+import net.intbird.soft.app.auto.service.api.AutoServiceInterface
+import net.intbird.soft.lib.service.loader.ServicesLoader
 
 /**
  * created by Bird
  * on 2020/5/13
- * DingTalk id: intbird
+ * DingTalk id: net.intbird
  */
 @AutoService(AutoServiceInterface::class)
 class AutoServiceImpl : AutoServiceInterface {

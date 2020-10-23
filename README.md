@@ -1,15 +1,15 @@
 AutoService
 ========
 
-This repo is a sample of java service loader
+This repo is a sample for java service loader and androidx startup
 
-========
+
 
 # implements
 
  ```
   //java service loader and custom path service loader
-  intbird.soft.app.JavaServiceLoader
+  net.intbird.soft.app.JavaServiceLoader
 
   // https://github.com/google/auto/tree/master/service
   'com.google.auto.service:auto-service-annotations:1.0-rc6'
@@ -30,12 +30,12 @@ include ':services-java' // java service demo
 ```
 
 ## auto servcie & androidx startup 
-![intbird](./images/intbird.png)
+![net.intbird](./images/intbird.png)
 
 
 
 --------
-# intbird
+# net.intbird
 
 myselt auto service loader
 #### 1.add maven url in root project `build.gradle` file
@@ -44,7 +44,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven { url "https://intbird.ml/maven/releases/" }
+        maven { url "https://intbird.net/maven/releases/" }
     }
 }
 ```
@@ -54,6 +54,6 @@ $lastVersion = 1.0.0 [click here to see more info](CHANGELOG.md)
 
 ```
 dependencies {
-    implementation 'intbird.soft.lib:service-loader:1.0.0'
+    implementation 'net.intbird.soft.lib:service-loader:1.0.0'
 }
 ```

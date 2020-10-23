@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="intbird.soft.app.MainActivity">
+        <activity android:name="net.intbird.soft.app.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +25,7 @@
 
             <!-- Automatically run IntbirdInitializer at app startup -->
             <meta-data
-                android:name="intbird.soft.app.startup.IntbirdHttpInit"
+                android:name="net.intbird.soft.app.startup.IntbirdHttpInit"
                 android:value="androidx.startup" />
         </provider>
     </application>

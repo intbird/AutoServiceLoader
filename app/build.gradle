@@ -15,7 +15,7 @@ android {
         versionName rootProject.versionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        manifestPlaceholders = [web: "intbird.ml"]
+        manifestPlaceholders = [web: "intbird.net"]
     }
 
     buildTypes {

@@ -1,5 +1,5 @@
 include ':services-android'
-rootProject.name='ServiceLoader'
+rootProject.name='AutoServiceLoader'
 include ':app'
 
 include ':service-loader'

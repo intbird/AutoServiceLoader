@@ -9,12 +9,12 @@ buildscript {
     repositories {
         jcenter()
         maven { url 'https://maven.aliyun.com/repository/google' }
-        maven { url "https://intbird.ml/maven/releases/" }
+        maven { url "https://intbird.net/maven/releases/" }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:$build_gradle"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath("intbird.soft.gradle:publish-maven:$publish_version") {
+        classpath("net.intbird.soft.gradle:publish-maven:$publish_version") {
             changing = true
         }
 
@@ -36,7 +36,7 @@ allprojects {
     repositories {
         jcenter()
         maven { url 'https://maven.aliyun.com/repository/google' }
-        maven { url "https://intbird.ml/maven/releases/" }
+        maven { url "https://intbird.net/maven/releases/" }
     }
     configurations.all {
         resolutionStrategy {
@@ -59,7 +59,7 @@ ext {
     buildToolsVersion = '29.0.3'
 
     resourcePrefix = 'service_loader'
-    groupId = "intbird.soft.lib"
+    groupId = "net.intbird.soft.lib"
     versionCode = 1
     versionName = "1.0.0"
 }
