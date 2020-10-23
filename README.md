@@ -1,7 +1,7 @@
 AutoService
 ========
 
-This repo is a sample for java service loader and androidx startup
+This repo is a sample of auto service and androidx startup
 
 
 
@@ -30,12 +30,12 @@ include ':services-java' // java service demo
 ```
 
 ## auto servcie & androidx startup 
-![net.intbird](./images/intbird.png)
+![intbird](./images/intbird.png)
 
 
 
 --------
-# net.intbird
+# intbird
 
 myselt auto service loader
 #### 1.add maven url in root project `build.gradle` file
@@ -44,7 +44,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven { url "https://intbird.net/maven/releases/" }
+        maven { url "https://intbird.net/maven/" }
     }
 }
 ```
